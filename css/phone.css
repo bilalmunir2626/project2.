@@ -17,7 +17,7 @@
 
 /* Home section  */
 #home {
-    height: auto; /*Adjust height for small screens*/
+    height: 20vh; /*Adjust height for small screens*/
     
     overflow: hidden;
     width: 100%;
@@ -52,16 +52,17 @@
     overflow: hidden;
 }
 /* clients section  */
-.client-items{
-    margin: 6px;
-    padding: 3px;
-}
+
 .client-items img{
     height: 80px;
 }
 #client-section::before{
     height: 23%;
     overflow: hidden;
+}
+ .client-items{
+    margin: 6px;
+    padding: 3px;
 }
 /* Contact Section  */
 #contact::before{
@@ -79,6 +80,7 @@
     font-size: 0.8rem;
 
 }
+
 
 /* Footer section  */
 
