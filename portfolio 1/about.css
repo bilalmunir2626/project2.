@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Itim&display=swap');
+/* About Section  */
+
+
+#about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    height: 90vh;
+    width: 55vw;
+    background-color: #0c2b41;
+    border-radius: 5%;
+}
+.upper-side{
+    height: 56vh;
+    width: 55vw;
+    display: flex;
+}
+.upper-side h1,
+.upper-side h4{
+    margin: 0.5% 2%;
+   word-spacing: 250%;
+   font-family: "Itim", serif;
+    
+}
+.upper-side p{
+    margin: 5% 2%;
+}
+.column{
+    height: 34%;
+    width: 21%;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.pic{
+    height: 45%;
+    width: 25%;
+    border: 7px solid #446e8b;
+    border-radius: 50%;
+    box-shadow: -2px 3px 40px 7px black;
+    overflow: hidden;
+    margin: 8% 12%;
+  
+}
+.pic img{
+    height: 130%;
+    width: 100%;
+
+}
+.btn{
+ position: relative;
+    top: 70%;
+    right: 32%;
+    height: 5vh;
+    width: 8vw;
+  
+}
+.btn a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #00abf0;
+    display: flex;
+    align-items: center;
+    height: 80%;
+    padding: 1%;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    z-index: 1;
+}
+
+.btn a::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4.5vh;
+    background-color:  #00abf0;
+    transition: .5s;
+    z-index: -1;
+    
+}
+.btn a:hover{
+    color: black;
+    cursor: pointer;
+}
+.btn a:hover::before{
+    width: 100%;
+   
+}
+.about-me{
+    display: flex;
+    justify-content: space-between;
+}
+.about-1{
+    width: 23vw;
+    height: 20vh;
+    /* border-right: 2px solid white; */
+    display: block;
+    color: white;
+    padding-bottom: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.about-1 h1{
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.about-1 p{
+    margin: 8% 0;
+}
+.border{
+    border-right: 2px solid #081b29;
+}

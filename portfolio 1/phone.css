@@ -1,0 +1,324 @@
+
+@media screen and (max-width:600px) {
+
+    * {
+      margin: 0;
+      padding: 0;
+      /* box-sizing: border-box; */
+    }
+    
+    body {
+      background-color: #081b29;
+    }
+    
+    .header {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 20px;
+      width: 80%;
+      background-color: transparent;
+      align-items: center;
+    }
+    
+    header {
+      display: flex;
+      justify-content: center;
+    }
+    
+    header .logo {
+      position: relative;
+      font-size: 2.3rem;
+      color: white;
+      text-decoration: none;
+      font-family: "Agu Display", serif;
+    }
+    
+    .logo::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #081b29;
+      animation: showcase 1s ease forwards;
+      animation-delay: .5s;
+    }
+    
+    header nav a {
+      font-size: 1.4rem;
+      color: white;
+      text-decoration: none;
+      margin: 14px;
+      padding: 5px 10px;
+    }
+    
+    header nav a:hover {
+      background-color: white;
+      color: black;
+      border-radius: 20px;
+    }
+    
+    nav {
+      position: relative;
+    }
+    
+    header nav::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #081b29;
+      animation: showcase 1s ease forwards;
+      animation-delay: 1s;
+    }
+    
+    /* Home section */
+    #home-section {
+      height: 100vh;
+      margin: 0% 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap; /* Allow content to wrap for smaller screens */
+    }
+    
+    .home {
+      width: 100%; /* Full width for smaller screens */
+      color: white;
+      margin: 0% 2%;
+      text-align: center; /* Center-align text for smaller screens */
+    }
+    
+    .home h1 {
+      font-weight: bolder;
+      font-size: 2.5rem;
+      margin: 2% 0;
+      font-family: "Itim", serif;
+    }
+    
+    .home h3 {
+      font-size: 1.5rem;
+      color: #00abf0;
+      margin: 1% 0;
+    }
+    
+    .home p {
+      font-size: 1.1rem;
+    }
+    .home p::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #081b29;
+        animation: showcase 1s ease forwards;
+        animation-delay: 1.7s;
+    }
+    .home h1::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #081b29;
+        animation: showcase 1s ease forwards;
+        animation-delay: 1.3s;
+    
+    }
+    .home h3::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #081b29;
+        animation: showcase 1s ease forwards;
+        animation-delay: 1.5s;
+    }
+    
+    .btn-box {
+      margin: 6% auto;
+      display: flex;
+      justify-content: center; /* Center buttons */
+      gap: 10px; /* Add spacing between buttons */
+      flex-wrap: wrap; /* Ensure buttons wrap for smaller screens */
+    }
+    
+    .btn-box a {
+      text-decoration: none;
+      margin: 3%;
+      padding: 10px 20px;
+      border: 2px solid #00abf0;
+      border-radius: 12px;
+      font-size: 1.2rem;
+      font-weight: bolder;
+      transition: color 0.5s ease;
+      z-index: 1;
+    }
+    
+    .btn-box .hire {
+      background-color: #00abf0;
+    }
+    
+    .btn-box .talk {
+      background-color: transparent;
+      color: #00abf0;
+    }
+    
+    .btn-box a:hover {
+      background-color: #081b29;
+    }
+    
+    /* Social icons */
+    .sign {
+      position: absolute;
+      top: 47%;
+      left: 5%;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .sign a {
+      width: 50px;
+      height: 50px;
+      font-size: 1.2rem;
+      border: 2px solid #00abf0;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: #00abf0;
+      transition: 0.5s;
+    }
+    
+    .sign a:hover {
+      color: black;
+    }
+    
+    .img {
+      width: 100%;
+      margin: 20px 0;
+      text-align: center; /* Center-align image */
+    }
+    
+    .img img {
+      max-width: 100%;
+      height: auto; /* Maintain aspect ratio */
+      transition: 0.5s;
+    }
+    
+    .img:hover {
+      opacity: 0.8;
+    }
+    
+    /* Keyframe showcase */
+    @keyframes showcase {
+      100% {
+        width: 0;
+      }
+    }
+    
+    /* Media Query for screens 600px and smaller */
+    @media (max-width: 600px) {
+      .header {
+        flex-direction: column; /* Stack header items */
+        margin: 10px;
+        width: 100%;
+      }
+    
+      header nav a {
+        font-size: 1rem; /* Reduce font size */
+        margin: 10px 5px;
+      }
+    
+      #home-section {
+        margin: 0;
+        padding: 20px;
+      }
+    
+      .home h1 {
+        font-size: 2rem; /* Smaller font size for headings */
+      }
+    
+      .home h3 {
+        font-size: 1.2rem;
+      }
+    
+      .home p {
+        font-size: 1rem;
+      }
+    
+      .btn-box a {
+        font-size: 1rem; /* Adjust button size */
+        padding: 8px 16px;
+      }
+    
+      .sign {
+        flex-direction: row; /* Stack social icons horizontally */
+        /* top: 40%; */
+        left: 5%;
+      }
+    
+      .sign a {
+        width: 40px; /* Smaller icons */
+        height: 40px;
+        font-size: 1rem;
+      }
+    
+      .img img {
+        height: auto; /* Ensure images scale down */
+      }
+    }
+    
+}
+
+/* responive for about section  */
+@media (max-width:600px){
+
+.container{
+    width: 80vw;
+    height: auto;
+}
+.upper-side{
+    width: 79vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.column{
+    width: 95%;
+}
+.pic {
+    height: 37%;
+    width: 54%;
+}
+.btn{
+    height: 5vh;
+    width: 24vw;
+    position: relative;
+    top: 0%;
+    left: 0%;
+  }
+  .btn a{
+  font-size: 1rem;
+}
+.sign{
+  top: 48%;
+}
+.about-1{
+  width: 41vw;
+  font-size: 0.7rem;
+}
+.btn-box {
+  margin: 2% auto;
+}
+}
